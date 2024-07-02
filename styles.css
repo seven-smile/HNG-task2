@@ -49,19 +49,24 @@ section {
 
 .profile-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.profile-time-container,
+.profile-time-container {
+  width: 100%;
+}
+
 .prof {
-  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .profile-picture {
@@ -100,12 +105,13 @@ ul li {
 /* Styles for horizontal links */
 #links ul {
   display: flex;
-  justify-content: space-around; /* Space out links evenly */
-  flex-wrap: wrap; /* Allow wrapping if needed */
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 #links ul li {
-  margin: 5px; /* Adjust margin as needed */
+  margin: 5px;
 }
 
 /* Responsive Design */
@@ -117,14 +123,9 @@ ul li {
 }
 
 @media (max-width: 600px) {
-  .profile-picture {
-    width: 100px;
-    height: auto;
-  }
-
   .profile-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   #intro {
@@ -147,6 +148,7 @@ ul li {
 
   #links ul {
     flex-direction: column;
+    align-items: center;
   }
 }
 
