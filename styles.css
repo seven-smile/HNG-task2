@@ -43,6 +43,10 @@ section {
   line-height: 1.6;
 }
 
+#goals h2 {
+  text-align: center;
+}
+
 .profile-container {
   display: flex;
   justify-content: space-between;
